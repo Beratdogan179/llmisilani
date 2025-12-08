@@ -67,7 +67,11 @@ export default function App() {
     } catch (err) {
       console.error("Yükleme veya eşleştirme hatası:", err);
       setError(`Eşleştirme başarısız oldu. Hata: ${err instanceof Error ? err.message : String(err)}`);
-      setResults(mockResults); // Hata durumunda bile arayüzü göstermek için mock kullanıldı.
+      
+      // 👇 ESKİ KOD: setResults(mockResults); (BUNU SİLİYORUZ)
+      
+      // 👇 YENİ KOD: Sonuçları sıfırlıyoruz, böylece ekranda eski veya sahte veri kalmaz.
+      setResults(null); 
 
     } finally {
       setLoading(false);
@@ -92,12 +96,7 @@ export default function App() {
     );
   };
 
-  // Mock sonuçlar (API henüz kurulu değilse test için kullanılır)
-  const mockResults: MatchResult[] = [
-    { job_title: "Yazılım Mühendisi (Senior)", general_score: 0.88, skill_match: 0.95, experience_match: 0.80, report_summary: "Adayın Python/FastAPI tecrübesi üst düzeydedir. Eksik: DevOps bilgisi." },
-    { job_title: "Veri Bilimcisi", general_score: 0.65, skill_match: 0.70, experience_match: 0.60, report_summary: "İstatistik bilgisi yeterli, ancak R dili tecrübesi düşüktür." },
-    { job_title: "Backend Geliştirici", general_score: 0.92, skill_match: 0.90, experience_match: 0.95, report_summary: "Mükemmel uyum. Tüm teknik ve deneyim gereksinimlerini karşılamaktadır." },
-  ];
+  
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col items-center p-4 sm:p-8 font-inter">
@@ -121,7 +120,7 @@ export default function App() {
             <input 
               id="file-upload" 
               type="file" 
-              accept=".pdf,.docx,.txt" 
+              accept=".pdf,.docx,.txt,.png,.jpg,.jpeg"
               onChange={handleFileChange} 
               className="hidden" 
               disabled={loading}
