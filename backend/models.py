@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, Text, DateTime, Float
 from sqlalchemy.sql import func
-from .database import Base
+from database import Base
 
 class JobPosting(Base):
     """İş İlanları Tablosu"""

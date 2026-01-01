@@ -16,6 +16,9 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_community.document_loaders import PyPDFLoader, TextLoader, Docx2txtLoader
 
+from database import engine, Base, SessionLocal, get_db
+import models
+
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -52,20 +55,48 @@ vector_store = None
 # --- Veri Yükleme ---
 def load_and_index_jobs():
     global vector_store
-    if not os.path.exists(JOB_DATA_FILE):
-        return
+    docs = []
+    
+    # Öncelikli olarak Veritabanından (Supabase) yüklemeyi dene
     try:
-        with open(JOB_DATA_FILE, 'r', encoding='utf-8') as f:
-            jobs_data = json.load(f)
-        docs = []
-        for job in jobs_data:
-            content = f"Title: {job.get('job_title', '')}\nDesc: {job.get('description', '')}\nQuals: {job.get('qualifications_raw', '')}"
-            docs.append(Document(page_content=content, metadata=job))
+        db = SessionLocal()
+        db_jobs = db.query(models.JobPosting).all()
+        if db_jobs:
+            for job in db_jobs:
+                content = f"Title: {job.title}\nDesc: {job.description}\nQuals: {job.requirements}"
+                # Meta veriyi JSON formatına yakın tut
+                meta = {
+                    "job_title": job.title,
+                    "description": job.description,
+                    "qualifications_raw": job.requirements,
+                    "company": job.company,
+                    "location": job.location
+                }
+                docs.append(Document(page_content=content, metadata=meta))
+            print(f"✅ Supabase'den {len(docs)} ilan yüklendi.")
+    except Exception as e:
+        print(f"⚠️ DB Yükleme Hatası (JSON'a geçiliyor): {e}")
+    finally:
+        db.close()
+
+    # Eğer DB boşsa veya hata alındıysa JSON'dan yükle
+    if not docs and os.path.exists(JOB_DATA_FILE):
+        try:
+            with open(JOB_DATA_FILE, 'r', encoding='utf-8') as f:
+                jobs_data = json.load(f)
+            for job in jobs_data:
+                content = f"Title: {job.get('job_title', '')}\nDesc: {job.get('description', '')}\nQuals: {job.get('qualifications_raw', '')}"
+                docs.append(Document(page_content=content, metadata=job))
+            print(f"✅ JSON'dan {len(docs)} ilan yüklendi.")
+        except Exception as e:
+            print(f"❌ JSON Hata: {e}")
+
+    if docs:
         embeddings = OpenAIEmbeddings(model=EMBEDDING_MODEL)
         vector_store = FAISS.from_documents(docs, embeddings)
-        print("✅ Veriler Hazır.")
-    except Exception as e:
-        print(f"❌ Hata: {e}")
+        print("✅ Vektör Deposu Hazır.")
+    else:
+        print("⚠️ Hiç ilan bulunamadı.")
 
 @app.on_event("startup")
 async def startup_event():
