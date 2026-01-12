@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "case_type": "Mükemmel Eşleşme (Turizm)",
+    "job_title": "Resepsiyonist (SPICE HOTEL)",
+    "job_desc": "Turizm ve Otelcilik mezunu, Almanca/İngilizce bilen, Fidelio kullanabilen Resepsiyonist aranmaktadır.",
+    "cv_text": "AD: Meryem Öztürk. POZİSYON: Kıdemli Resepsiyonist. ÖZET: 10+ yıl deneyim. Ön büro yönetimi, ziyaretçi karşılama, operasyonel verimlilik. Selen Kimya ve Can Medikal tecrübesi.",
+    "human_score": 0.95
+  },
+  {
+    "id": 2,
+    "case_type": "Mükemmel Eşleşme (Muhasebe)",
+    "job_title": "Muhasebe Sorumlusu (Crowe Troy)",
+    "job_desc": "Yabancı müşterilere hizmet veren muhasebe departmanında çalışacak, 5-20 yıl deneyimli Muhasebe Sorumlusu.",
+    "cv_text": "AD: Mehmet Polat. POZİSYON: Mali Müşavir / Serbest Muhasebeci. ÖZET: Fatura, SMM, defter tutma, maliyet raporları, KDV iadeleri, vergi ve SSK dosyaları. E-defter ve e-fatura uzmanı.",
+    "human_score": 0.95
+  },
+  {
+    "id": 3,
+    "case_type": "Mükemmel Eşleşme (Satış)",
+    "job_title": "Kurumsal Satış Temsilcisi (PRONET)",
+    "job_desc": "Güvenlik çözümleri sunacak, aktif saha ziyaretleri yapacak ve portföy yönetecek satış temsilcisi.",
+    "cv_text": "AD: Metin Demir. POZİSYON: Satış Danışmanı. ÖZET: 5 yıl deneyim. Kariyer.net ve Sigortam.net tecrübesi. Satış hedeflerini aşma (%20 artış), ikna kabiliyeti.",
+    "human_score": 0.90
+  },
+  {
+    "id": 4,
+    "case_type": "Güçlü Eşleşme (Teknik -> Teknik)",
+    "job_title": "Teknik Hizmet Yöneticisi (ISS)",
+    "job_desc": "Makine/Elektrik Müh. mezunu, 5 yıl deneyimli. Elektrik, mekanik, otomasyon bakım ve işletme takibi.",
+    "cv_text": "AD: Erdem Yalçın. POZİSYON: Proje Sorumlusu / Makina Mühendisi. ÖZET: Projeleri imalata hazırlama, malzeme siparişi, mekanik tesisat bilgisi. Makine Müh. mezunu.",
+    "human_score": 0.85
+  },
+  {
+    "id": 5,
+    "case_type": "Transfer Edilebilir Yetenek (Kabin Memuru -> Hasta İlişkileri)",
+    "job_title": "Hasta Kabul Sorumlusu (Dentram)",
+    "job_desc": "Hasta kabul işlemlerini yürütecek, kayıt tutacak, iletişimi sağlayacak personel.",
+    "cv_text": "AD: Bahar Tanay. POZİSYON: Kabin Memuru (THY/Pegasus). ÖZET: Olağanüstü kişilerarası iletişim, problem çözme. Zorlu durumlarda müşteri memnuniyeti sağlama (%95 memnuniyet).",
+    "human_score": 0.70
+  },
+  {
+    "id": 6,
+    "case_type": "Teknoloji Farkı (Python -> Java)",
+    "job_title": "Java Yazılım Uzmanı (FMSS Bilişim)",
+    "job_desc": "Java/Spring ekosisteminde tecrübeli, mikroservis mimarilerinde çalışacak yazılımcı.",
+    "cv_text": "AD: John Williams. POZİSYON: Junior Software Developer. ÖZET: Python uygulamaları yazma, Veritabanı tasarımı. Bilgisayar Bilimleri mezunu. Temel yazılım bilgisi sağlam.",
+    "human_score": 0.55
+  },
+  {
+    "id": 7,
+    "case_type": "Alan Kayması (Mühendis -> Pazarlama/Satış)",
+    "job_title": "Uzman Yardımcısı (Kutup - Perakende)",
+    "job_desc": "Elektronik perakendeciliğinde müşteri memnuniyeti odaklı, iletişimi güçlü çalışma arkadaşı.",
+    "cv_text": "AD: Dilara Ün. POZİSYON: Endüstri Mühendisi (Yeni Mezun). ÖZET: Kariyer.net Ürün Yönetimi ve Cimri Pazarlama stajı. Süreç optimizasyonu ve sosyal medya içerik yönetimi.",
+    "human_score": 0.75
+  },
+  {
+    "id": 8,
+    "case_type": "Tam Uyumsuzluk (İnşaat -> Sağlık)",
+    "job_title": "Hemşire (MLP Sağlık)",
+    "job_desc": "Hastanemizde görevlendirilecek Hemşire aranmaktadır.",
+    "cv_text": "AD: Ali Kartal. POZİSYON: İnşaat Mühendisi. ÖZET: Altyapı projeleri, yol genişletme, yapısal analiz, betonarme. İnşaat Müh. mezunu.",
+    "human_score": 0.05
+  },
+  {
+    "id": 9,
+    "case_type": "Tam Uyumsuzluk (Güvenlik -> Yazılım)",
+    "job_title": "DevOps Mühendisi (Mercan Bilişim)",
+    "job_desc": "Bulut altyapısı ve CI/CD süreçlerini yönetecek DevOps mühendisi.",
+    "cv_text": "AD: Adnan Karakaya. POZİSYON: Güvenlik Görevlisi. ÖZET: Silahlı güvenlik sertifikası, devriye gezme, kamera izleme.",
+    "human_score": 0.05
+  },
+  {
+    "id": 10,
+    "case_type": "Deneyim Uyuşmazlığı (Junior -> Senior)",
+    "job_title": "Kıdemli İnsan Kaynakları Uzmanı (Adecco)",
+    "job_desc": "En az 5 yıl deneyimli Kıdemli İK Uzmanı.",
+    "cv_text": "AD: Derya Gümüş. POZİSYON: Sosyal Medya Stajyeri / İşletme Mezunu. ÖZET: Yeni mezun, staj deneyimi var. İK deneyimi yok.",
+    "human_score": 0.20
+  },
+  {
+    "id": 11,
+    "case_type": "Sektör Benzerliği (Garson -> Barista)",
+    "job_title": "Barista (Kahve Dünyası)",
+    "job_desc": "Kahve hazırlayacak, misafir memnuniyeti sağlayacak, hijyen kurallarına uyacak.",
+    "cv_text": "AD: Baylan Garson Adayı (Senaryo). POZİSYON: Servis Elemanı / Garson. ÖZET: Sipariş alma, servis yapma, müşteri ilişkileri. (Not: Metin Demir satışçı ama hizmet sektörü yetenekleri var, CV_15 Baylan Garson ilanıyla eşleşen CV olmadığı için varsayımsal CV_9 üzerinden değerlendirilebilir fakat biz CV_17 Amelia'yı kullanalım - Junior Dev ama belki part time arıyor? Hayır, en iyisi CV_21 Merve Baran)",
+    "human_score": 0.00
+  },
+  {
+    "id": 12,
+    "case_type": "Potansiyel Eşleşme (Çocuk Bakımı -> Temizlik/Düzen)",
+    "job_title": "Çamaşırhane Personeli (APlus)",
+    "job_desc": "Temiz tekstillerin dağıtımı, kirli toplama, depo tanzim ve takibi.",
+    "cv_text": "AD: Merve Baran. POZİSYON: Çocuk Bakıcısı. ÖZET: 7 yıl çocuk bakımı, yemek hazırlama, hijyen, sorumluluk, düzen.",
+    "human_score": 0.40
+  },
+  {
+    "id": 13,
+    "case_type": "Alan Uyumu (Hemşire -> Ambulans)",
+    "job_title": "Ambulans Hekimi (Acıbadem)",
+    "job_desc": "Vakaya ulaşma, müdahale etme. (Not: Hekim aranıyor, aday Hemşire)",
+    "cv_text": "AD: Elif Kara. POZİSYON: Klinik Hemşire. ÖZET: 5 yıl deneyim. Acil müdahale, hasta bakımı, vitallerin kontrolü.",
+    "human_score": 0.30
+  },
+  {
+    "id": 14,
+    "case_type": "Mükemmel Eşleşme (Avukat)",
+    "job_title": "Hukuk/Yasal Takip (İlan Listesinde yok ama genel uyum)",
+    "job_desc": "Bu senaryo için uygun ilan yok, o yüzden CV_28 Uğur Demiral'ı 'Şube Yöneticisi' ilanına deneyelim.",
+    "cv_text": "AD: Uğur Demiral. POZİSYON: İş Hukuku Avukatı. ÖZET: Holding hukuki süreçleri, sözleşme hazırlama, mevzuat takibi.",
+    "human_score": 0.00
+  },
+  {
+    "id": 14,
+    "case_type": "Yönetici Potansiyeli (Avukat -> Şube Müdürü)",
+    "job_title": "Şube Yöneticisi (iDATA)",
+    "job_desc": "Vize başvuru merkezinde operasyon yönetimi, ekip yönetimi, evrak takibi.",
+    "cv_text": "AD: Uğur Demiral. POZİSYON: İş Hukuku Avukatı. ÖZET: Şirket avukatlığı, süreç yönetimi, yasal prosedürlere hakimiyet.",
+    "human_score": 0.65
+  },
+  {
+    "id": 15,
+    "case_type": "Mükemmel Eşleşme (Eğitim)",
+    "job_title": "Sınıf Öğretmeni (KAPLAN OKULLARI - Yardımcı)",
+    "job_desc": "Yardımcı Sınıf Öğretmeni alımı.",
+    "cv_text": "AD: Tutku Duman. POZİSYON: Sınıf Öğretmeni. ÖZET: 8 yıl deneyim. Bireysel öğrenme planları, veli iletişimi. Sınıf Öğretmenliği mezunu.",
+    "human_score": 0.95
+  },
+  {
+    "id": 16,
+    "case_type": "Uyumsuz (Mimar -> Aşçı)",
+    "job_title": "Aşçı Yardımcısı (MOOD UP)",
+    "job_desc": "Hızlı çalışma temposuna ayak uydurabilecek, hijyen kurallarına dikkat eden aşçı yardımcısı.",
+    "cv_text": "AD: Zeynep Yıldız. POZİSYON: Kıdemli Mimar. ÖZET: Kentsel dönüşüm, şantiye yönetimi, tasarım.",
+    "human_score": 0.10
+  },
+  {
+    "id": 17,
+    "case_type": "Junior Eşleşme (Öğrenci -> Stajyer/Yardımcı)",
+    "job_title": "Eğitim Danışmanı (Monopol)",
+    "job_desc": "Öğrencilere rehberlik edecek, program tanıtımı yapacak danışman.",
+    "cv_text": "AD: Mehmet Özdemir. POZİSYON: Yeni Medya Öğrencisi. ÖZET: Kulüp koordinatörlüğü, iletişim becerileri, organizasyon yeteneği.",
+    "human_score": 0.60
+  },
+  {
+    "id": 18,
+    "case_type": "Aşırı Nitelik (Overqualified)",
+    "job_title": "Temizlik Görevlisi (Moda Selvim)",
+    "job_desc": "Titiz, temizlik görevlisi.",
+    "cv_text": "AD: Sena Kara. POZİSYON: Kıdemli Proje Mühendisi. ÖZET: 12 yıl deneyim, üretim süreçleri, verimlilik analizi.",
+    "human_score": 0.05
+  },
+  {
+    "id": 19,
+    "case_type": "Domain Eşleşmesi (Sağlık -> Sağlık Satış)",
+    "job_title": "Saha Satış Danışmanı (MEA - Genel)",
+    "job_desc": "Aktif saha satışı yapacak personel. (Genel Satış)",
+    "cv_text": "AD: Meltem Dora. POZİSYON: Grafik Tasarım Öğrencisi. ÖZET: Görsel tasarım yeteneği.",
+    "human_score": 0.10
+  },
+  {
+    "id": 20,
+    "case_type": "Güzel Eşleşme (Grafik -> Tasarım)",
+    "job_title": "Digital Marketing Supervisor (Paloma - İlgili)",
+    "job_desc": "Dijital pazarlama stratejileri, ajans yönetimi. (Tasarım bilgisi artı puan)",
+    "cv_text": "AD: Meltem Dora. POZİSYON: Grafik Tasarım Öğrencisi/Stajyeri. ÖZET: Logo, broşür, reklam bülteni. Ajans deneyimi.",
+    "human_score": 0.50
+  }
+]
